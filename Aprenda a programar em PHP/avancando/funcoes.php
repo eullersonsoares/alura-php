@@ -2,7 +2,7 @@
 
 function exibeMensagem($mensagem) 
 {
-    echo $mensagem . PHP_EOL;
+    echo $mensagem . "<br>";
 };
 
 function sacar(array $conta, float  $valor): array

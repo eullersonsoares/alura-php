@@ -48,8 +48,33 @@ foreach($contasCorrentes as $cpf => $conta) {
         "$cpf -> $conta[titular] | saldo -> $conta[saldo]"
     ); */
 
-    //Forma complexa:
+    /*Forma complexa:
     exibeMensagem(
         "$cpf -> $titular | saldo -> $saldo"
-    );
+    );*/
 };
+?>
+
+<!-- Primeira exibição de html com php -->
+
+<html>
+    <head>
+        <title>HTML com php</title>
+    </head>
+    <body>
+
+        <?php foreach($contasCorrentes as $cpf => $conta) { ?>
+            
+            <dl>
+                <dt>
+                    <h3><?= $conta['titular'] . " - " . $cpf ?></h3>
+                </dt>
+                <dd>
+                    Saldo: <?= $conta['saldo']?>
+                </dd>
+            </dl>
+
+        <?php }?>
+
+    </body>
+</html>
