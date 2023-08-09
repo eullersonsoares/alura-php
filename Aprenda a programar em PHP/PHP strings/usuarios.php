@@ -1,6 +1,6 @@
 <?php 
 
-    $email = 'eullerson@gmail.com';
+    $email = ' eullerson@gmail.com';
     $posicaoDoArroba = strpos($email, "@");
     $nome = substr($email, 0, 9); //Exibe/retorna uma parte da string do "índice" 0 à 9.
     $nome2 = "João"; //caracteres acentuados, armazenam o dobro de bytes;
@@ -23,4 +23,4 @@
     echo strlen($nome) . PHP_EOL;
     echo strlen($nome2) . PHP_EOL;
 
-
+    echo trim($email) . PHP_EOL;
